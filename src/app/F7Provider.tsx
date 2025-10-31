@@ -13,6 +13,7 @@ import 'framework7-icons/css/framework7-icons.css';
 import 'material-icons/iconfont/material-icons.css';
 
 // Install Framework7 React plugin for Framework7
+// eslint-disable-next-line react-hooks/rules-of-hooks
 Framework7.use(Framework7React);
 
 const routes = [
