@@ -21,6 +21,18 @@ const routes = [
     path: '/',
     asyncComponent: () => import('./page'),
   },
+  {
+    path: '/popup',
+    asyncComponent: () => import('./popup/page'),
+  },
+  {
+    path: '/swipeable-tabs',
+    asyncComponent: () => import('./swipeable-tabs/page'),
+  },
+  {
+    path: '/swipeable-segmented',
+    asyncComponent: () => import('./swipeable-segmented/page'),
+  },
 ];
 
 export default function F7Provider({
@@ -43,7 +55,7 @@ export default function F7Provider({
         browserHistorySeparator=""
         browserHistoryInitialMatch={true}
         browserHistoryStoreHistory={false}
-        url="/"
+        url={pathname || '/'}
       >
         {/* Initial Framework7 Page */}
         {children}

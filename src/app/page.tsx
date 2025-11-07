@@ -1,24 +1,19 @@
 'use client';
 
-import { Link, Navbar, NavRight, Page, Popup } from "framework7-react";
+import { Block, Button, Navbar, Page, PageContent } from "framework7-react";
 
 export default function Home() {
   return (
-    <Popup className="demo-popup-swipe" swipeToClose opened>
-      <Page>
-        <Navbar title="Swipe To Close">
-          <NavRight>
-            <Link popupClose>Close</Link>
-          </NavRight>
-        </Navbar>
+    <Page pageContent={false}>
+      <Navbar title="F7 tests"></Navbar>
 
-        <div
-          style={{ height: '100%' }}
-          className="display-flex justify-content-center align-items-center"
-        >
-          <p>Swipe me up or down</p>
-        </div>
-      </Page>
-    </Popup>
+      <PageContent>
+        <Block className="flex flex-column gap-2">
+          <Button href="/popup">Popup</Button>
+          <Button href="/swipeable-tabs">Swipeable Tabs</Button>
+          <Button href="/swipeable-segmented">Swipeable Segmented</Button>
+        </Block>
+      </PageContent>
+    </Page>
   );
 }
