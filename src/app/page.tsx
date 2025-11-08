@@ -1,8 +1,9 @@
 'use client';
 
+import dynamic from "next/dynamic";
 import { Block, Button, Navbar, Page, PageContent } from "framework7-react";
 
-export default function Home() {
+function Home() {
   return (
     <Page pageContent={false}>
       <Navbar title="F7 tests"></Navbar>
@@ -17,3 +18,5 @@ export default function Home() {
     </Page>
   );
 }
+
+export default dynamic(() => Promise.resolve(Home), { ssr: false });

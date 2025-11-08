@@ -54,7 +54,7 @@ export default function F7Provider({
         browserHistory
         browserHistorySeparator=""
         browserHistoryInitialMatch={true}
-        browserHistoryStoreHistory={false}
+        browserHistoryStoreHistory={true}
         url={pathname || '/'}
       >
         {/* Initial Framework7 Page */}
