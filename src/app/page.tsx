@@ -13,6 +13,7 @@ function Home() {
           <Button href="/popup">Popup</Button>
           <Button href="/swipeable-tabs">Swipeable Tabs</Button>
           <Button href="/swipeable-segmented">Swipeable Segmented</Button>
+          <Button href="/swipeable-tabs-custom">Swipeable Tabs Custom</Button>
         </Block>
       </PageContent>
     </Page>

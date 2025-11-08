@@ -33,6 +33,10 @@ const routes = [
     path: '/swipeable-segmented',
     asyncComponent: () => import('./swipeable-segmented/page'),
   },
+  {
+    path: '/swipeable-tabs-custom',
+    asyncComponent: () => import('./swipeable-tabs-custom/page'),
+  }
 ];
 
 export default function F7Provider({
@@ -54,7 +58,8 @@ export default function F7Provider({
         browserHistory
         browserHistorySeparator=""
         browserHistoryInitialMatch={true}
-        browserHistoryStoreHistory={true}
+        browserHistoryStoreHistory={false}
+        preloadPreviousPage={true}
         url={pathname || '/'}
       >
         {/* Initial Framework7 Page */}
